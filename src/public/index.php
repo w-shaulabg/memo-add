@@ -35,13 +35,13 @@ array_multisort($standard_key_array, SORT_DESC, $pages);
       </tr>
 
       <?php foreach ($pages as $page): ?>
-        <tr>
-          <td><?php echo $page['title']; ?></td>
-          <td><?php echo $page['content']; ?></td>
-          <td><?php echo $page['created_at']; ?></td>
-          <td><a href="./edits.php?id=<?php echo $page['id']; ?>">編集</a></td>
-          <td><a href="./delete.php?id=<?php echo $page['id']; ?>">削除</a></td>
-        </tr>
+      <tr>
+        <td><?php echo $page['title']; ?></td>
+        <td><?php echo $page['content']; ?></td>
+        <td><?php echo $page['created_at']; ?></td>
+        <td><a href="./edit.php?id=<?php echo $page['id']; ?>">編集</a></td>
+        <td><a href="./delete.php?id=<?php echo $page['id']; ?>">削除</a></td>
+      </tr>
       <?php endforeach; ?>
 
     </table>
